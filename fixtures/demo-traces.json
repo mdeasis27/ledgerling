@@ -1,17 +1,80 @@
 {
   "traces": [
     {
-      "id": "placeholder-groceries-march",
-      "question": "How much did I spend on groceries in March?",
-      "placeholder": true,
+      "id": "rec-1792429997393",
+      "question": "How much did I spend on groceries in March 2026?",
+      "placeholder": false,
+      "recorded_at": "2026-10-19T17:13:17.393Z",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
       "steps": [
         {
           "name": "sum_by_category",
-          "args": { "from": "2026-03-01", "to": "2026-03-31", "category": "groceries" },
-          "result": { "category": "groceries", "spend_cents": 58470 }
+          "args": {
+            "from": "2026-03-01",
+            "to": "2026-03-31",
+            "category": "groceries"
+          },
+          "result": {
+            "category": "groceries",
+            "spend_cents": 58470
+          }
         }
       ],
-      "answer": "PLACEHOLDER: this is not a model answer. The tool result above is real (groceries, March: $584.70), but a maintainer still has to record a real run with `bun run record-trace`."
+      "answer": "You spent $584.70 on groceries in March 2026."
+    },
+    {
+      "id": "rec-1792430014494",
+      "question": "Was I over a $400 dining budget in February 2026?",
+      "placeholder": false,
+      "recorded_at": "2026-10-19T17:13:34.494Z",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "steps": [
+        {
+          "name": "budget_status",
+          "args": {
+            "category": "dining",
+            "month": "2026-02",
+            "budget_cents": 40000
+          },
+          "result": {
+            "category": "dining",
+            "month": "2026-02",
+            "spend_cents": 12741,
+            "remaining_cents": 27259,
+            "over": false
+          }
+        }
+      ],
+      "answer": "No, you were not over your $400 dining budget in February 2026. You spent $127.41, leaving $272.59 remaining."
+    },
+    {
+      "id": "rec-1792430031644",
+      "question": "Which merchant did I spend the most at in Q1 2026?",
+      "placeholder": false,
+      "recorded_at": "2026-10-19T17:13:51.644Z",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "steps": [
+        {
+          "name": "top_merchants",
+          "args": {
+            "from": "2026-01-01",
+            "to": "2026-03-31",
+            "n": 1
+          },
+          "result": {
+            "merchants": [
+              {
+                "description": "Maple Apartments",
+                "spend_cents": 555000
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "In Q1 2026, you spent the most at Maple Apartments, with a total of $5,550.00."
     }
   ]
 }

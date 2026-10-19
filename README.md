@@ -3,7 +3,7 @@
 Ask your bank statement questions. An LLM answers only by calling typed tools that do all the math.
 
 **Tool exactness: 100 / 100** (23 of 23 sample cases, `bun run eval`).
-**Agent exactness: pending live grading.**
+**Agent exactness: 87 / 100** (13 of 15 held-out questions answered correctly, live, Groq `qwen/qwen3.8-27b`).
 
 Spanish version: [README.es.md](README.es.md). Design tokens and contrast ratios: [DESIGN.md](DESIGN.md).
 
@@ -50,7 +50,8 @@ Live mode turns on when any of `GEMINI_API_KEY`, `GROQ_API_KEY` or `OPENROUTER_A
 
 - The first plan put the agent behind native `tools`; ai-kit's Gemini path has none, so it would have needed a second code path.
 - Google-hosted fonts at build time make offline builds fragile, so the fonts are committed and loaded locally.
-- The sample traces are not real model runs yet. The one that ships is a labelled placeholder; run `record-trace` with a key to replace it.
+- The agent misses multi-period totals: asked for April + May net cash flow, it reported each month and did not add them; asked for spend at one merchant, it listed the purchases without a total.
+- Groq retired `llama-3.3-70b-versatile`, and `openai/gpt-oss-*` emits native tool calls the JSON-in-text protocol rejects, so the Groq model is `qwen/qwen3.8-27b`.
 
 ## Planning trail
 

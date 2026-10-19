@@ -3,7 +3,7 @@
 Hago preguntas a mi estado de cuenta. Un LLM responde solo llamando a herramientas tipadas que hacen todas las cuentas.
 
 **Exactitud de herramientas: 100 / 100** (23 de 23 casos de muestra, `bun run eval`).
-**Exactitud del agente: pendiente de evaluación en vivo.**
+**Exactitud del agente: 87 / 100** (13 de 15 preguntas reservadas respondidas bien, en vivo, Groq `qwen/qwen3.8-27b`).
 
 Versión en inglés: [README.md](README.md). Tokens de diseño y contrastes: [DESIGN.md](DESIGN.md).
 
@@ -50,7 +50,8 @@ El modo en vivo se activa cuando existe alguna de `GEMINI_API_KEY`, `GROQ_API_KE
 
 - El primer plan usaba `tools` nativas; la ruta de Gemini en ai-kit no las tiene, así que habría hecho falta un segundo camino de código.
 - Las fuentes alojadas por Google durante la compilación vuelven frágil la construcción sin red, así que las fuentes están en el repositorio y se cargan en local.
-- Las trazas de ejemplo todavía no son ejecuciones reales de un modelo. La que se incluye es un marcador de posición etiquetado; ejecuta `record-trace` con una clave para reemplazarla.
+- El agente falla en totales de varios periodos: al pedirle el flujo neto de abril + mayo, dio cada mes sin sumarlos; al pedirle el gasto en un comercio, listó las compras sin dar el total.
+- Groq retiró `llama-3.3-70b-versatile`, y `openai/gpt-oss-*` emite llamadas nativas a herramientas que el protocolo de JSON en texto rechaza, así que el modelo de Groq es `qwen/qwen3.8-27b`.
 
 ## Rastro de planificación
 

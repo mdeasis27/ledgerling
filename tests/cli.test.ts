@@ -58,7 +58,7 @@ describe("demo traces", () => {
     for (const t of traces)
       for (const s of t.steps) expect(runTool(s.name, s.args, ledger)).toEqual(s.result);
   });
-  test("exactly one clearly marked placeholder ships", () => {
-    expect(loadTraces().filter((t) => t.placeholder)).toHaveLength(1);
+  test("only real recorded runs ship", () => {
+    for (const t of loadTraces()) expect(t.placeholder).toBe(false);
   });
 });
