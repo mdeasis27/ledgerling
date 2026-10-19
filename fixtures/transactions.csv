@@ -1,0 +1,152 @@
+date,description,amount_cents,category,account
+2026-01-01,Maple Apartments,-185000,rent,checking
+2026-01-01,Acme Payroll,312550,income,checking
+2026-01-01,Blue Bottle Coffee,-853,dining,credit
+2026-01-01,Steam,-3479,entertainment,credit
+2026-01-01,Starbucks,-575,dining,checking
+2026-01-03,Planet Fitness,-2499,health,checking
+2026-01-04,AMC Theatres,-2475,entertainment,credit
+2026-01-04,Uber,-1015,transport,checking
+2026-01-05,Netflix,-1599,entertainment,checking
+2026-01-05,Safeway,-5599,groceries,checking
+2026-01-07,Steam,-4590,entertainment,credit
+2026-01-08,Spotify,-1099,entertainment,checking
+2026-01-08,Blue Bottle Coffee,-522,dining,checking
+2026-01-09,Costco,-13543,groceries,credit
+2026-01-09,Trader Joe's,-6480,groceries,credit
+2026-01-10,Airbnb,-25861,travel,checking
+2026-01-11,AMC Theatres,-2917,entertainment,credit
+2026-01-12,Comcast,-8999,utilities,checking
+2026-01-12,Blue Bottle Coffee,-805,dining,checking
+2026-01-13,AMC Theatres,-2151,entertainment,credit
+2026-01-14,Steam,-3399,entertainment,checking
+2026-01-14,Whole Foods,-9618,groceries,checking
+2026-01-14,Dr. Lee Clinic,-7557,health,credit
+2026-01-15,Acme Payroll,312550,income,checking
+2026-01-15,Uber,-1753,transport,credit
+2026-01-16,Lyft,-917,transport,credit
+2026-01-17,Lyft,-1977,transport,credit
+2026-01-17,Nike,-5720,shopping,credit
+2026-01-18,Blue Bottle Coffee,-839,dining,credit
+2026-01-18,Steam,-3434,entertainment,credit
+2026-01-18,Trader Joe's,-4357,groceries,credit
+2026-01-19,Airbnb,-48158,travel,checking
+2026-01-20,PG&E,-6420,utilities,checking
+2026-01-20,Safeway,-5441,groceries,credit
+2026-01-20,Venmo from Sam,4500,income,checking
+2026-01-21,Uber,-2640,transport,credit
+2026-01-21,CVS Pharmacy,-4483,health,checking
+2026-01-23,Chipotle,-980,dining,checking
+2026-01-26,Target,-5539,shopping,credit
+2026-01-26,Costco,-8891,groceries,credit
+2026-01-27,Uber,-2975,transport,checking
+2026-01-27,Trader Joe's,-5229,groceries,credit
+2026-01-27,Uber,-2337,transport,checking
+2026-01-28,Steam,-5806,entertainment,credit
+2026-01-29,Uber,-2385,transport,credit
+2026-01-29,Target,-9382,shopping,credit
+2026-01-30,Sushi Zen,-5912,dining,checking
+2026-01-31,Delta Air Lines,-19366,travel,credit
+2026-02-01,Maple Apartments,-185000,rent,checking
+2026-02-01,Acme Payroll,312550,income,checking
+2026-02-02,Trader Joe's,-4969,groceries,credit
+2026-02-03,Planet Fitness,-2499,health,checking
+2026-02-03,Target,-2429,shopping,checking
+2026-02-03,Uber,-1306,transport,credit
+2026-02-03,Starbucks,-994,dining,credit
+2026-02-03,Whole Foods,-10895,groceries,credit
+2026-02-03,Blue Bottle Coffee,-552,dining,credit
+2026-02-03,CVS Pharmacy,-4189,health,checking
+2026-02-04,Airbnb,-55002,travel,credit
+2026-02-04,Uber,-1440,transport,checking
+2026-02-04,Dr. Lee Clinic,-5568,health,checking
+2026-02-05,Netflix,-1599,entertainment,checking
+2026-02-05,Trader Joe's,-1624,groceries,checking
+2026-02-07,Uber,-2647,transport,credit
+2026-02-08,Spotify,-1099,entertainment,checking
+2026-02-09,Chipotle,-1191,dining,checking
+2026-02-10,STARBUCKS,-513,dining,checking
+2026-02-10,Airbnb,-42766,travel,credit
+2026-02-11,AMC Theatres,-3156,entertainment,credit
+2026-02-11,Dr. Lee Clinic,-7584,health,credit
+2026-02-11,CVS Pharmacy,-3555,health,checking
+2026-02-12,Comcast,-8999,utilities,checking
+2026-02-13,Trader Joe's,-4361,groceries,credit
+2026-02-15,Acme Payroll,312550,income,checking
+2026-02-15,Trader Joe's,-7263,groceries,credit
+2026-02-16,Target,-5622,shopping,credit
+2026-02-18,Costco,-19559,groceries,checking
+2026-02-18,STARBUCKS,-455,dining,credit
+2026-02-18,Amazon,-14643,shopping,credit
+2026-02-19,AMC Theatres,-1405,entertainment,credit
+2026-02-20,PG&E,-6420,utilities,checking
+2026-02-20,Starbucks,-650,dining,credit
+2026-02-20,Starbucks,-650,dining,checking
+2026-02-20,Alpha Books,-2500,shopping,checking
+2026-02-20,Zed Books,-2500,shopping,checking
+2026-02-21,Uber,-1917,transport,credit
+2026-02-21,Steam,-3888,entertainment,checking
+2026-02-21,Starbucks,-908,dining,credit
+2026-02-21,Alpha Books,-1000,shopping,checking
+2026-02-21,Zed Books,-1000,shopping,checking
+2026-02-21,Amazon Refund,2999,shopping,checking
+2026-02-22,Starbucks,-841,dining,checking
+2026-02-22,AMC Theatres,-3139,entertainment,credit
+2026-02-24,Costco,-9899,groceries,checking
+2026-02-25,Airbnb,-40791,travel,checking
+2026-02-25,Whole Foods Refund,1850,groceries,checking
+2026-02-26,SUSHI ZEN,-4816,dining,credit
+2026-02-26,Safeway,-3806,groceries,checking
+2026-02-27,Trader Joe's,-5627,groceries,credit
+2026-02-27,Chipotle,-1171,dining,credit
+2026-02-27,Uber,-2801,transport,credit
+2026-02-28,Delta Air Lines,-28501,travel,credit
+2026-03-01,Maple Apartments,-185000,rent,checking
+2026-03-01,Acme Payroll,312550,income,checking
+2026-03-01,Steam,-2845,entertainment,credit
+2026-03-01,Lyft,-2522,transport,checking
+2026-03-02,Trader Joe's,-4434,groceries,checking
+2026-03-02,Whole Foods,-2362,groceries,credit
+2026-03-02,Shell Gas,-5704,transport,checking
+2026-03-03,Planet Fitness,-2499,health,checking
+2026-03-03,Blue Bottle Coffee,-754,dining,credit
+2026-03-03,Whole Foods,-2690,groceries,credit
+2026-03-04,Nike,-9914,shopping,credit
+2026-03-04,Chipotle,-1699,dining,credit
+2026-03-04,Starbucks,-551,dining,credit
+2026-03-04,Uber,-2690,transport,credit
+2026-03-05,Netflix,-1599,entertainment,checking
+2026-03-05,Starbucks,-535,dining,credit
+2026-03-06,Steam,-1444,entertainment,credit
+2026-03-07,Steam,-5032,entertainment,checking
+2026-03-07,CVS Pharmacy,-1529,health,credit
+2026-03-08,Spotify,-1099,entertainment,checking
+2026-03-08,Whole Foods,-11639,groceries,credit
+2026-03-08,Nike,-5005,shopping,credit
+2026-03-09,Whole Foods,-2735,groceries,credit
+2026-03-09,Dr. Lee Clinic,-7015,health,credit
+2026-03-09,Starbucks,-494,dining,checking
+2026-03-10,Savings Interest,1234,income,savings
+2026-03-11,Sushi Zen,-3900,dining,credit
+2026-03-11,Lyft,-2737,transport,checking
+2026-03-12,Comcast,-8999,utilities,checking
+2026-03-13,Shell Gas,-4686,transport,checking
+2026-03-13,Nike,-11893,shopping,credit
+2026-03-15,Acme Payroll,312550,income,checking
+2026-03-15,Nike,-7799,shopping,checking
+2026-03-15,Steam,-2234,entertainment,credit
+2026-03-17,CVS Pharmacy,-1341,health,checking
+2026-03-18,Trader Joe's,-4864,groceries,credit
+2026-03-20,PG&E,-6420,utilities,checking
+2026-03-20,Costco,-11644,groceries,credit
+2026-03-21,CVS Pharmacy,-2135,health,checking
+2026-03-22,Amazon,-9854,shopping,checking
+2026-03-24,Target,-1724,shopping,credit
+2026-03-24,Uber,-2886,transport,credit
+2026-03-24,Steam,-5655,entertainment,credit
+2026-03-28,STARBUCKS,-536,dining,credit
+2026-03-28,Nike,-6355,shopping,checking
+2026-03-29,Uber,-1728,transport,credit
+2026-03-30,Costco,-13781,groceries,credit
+2026-03-31,Trader Joe's,-4321,groceries,checking
+2026-03-31,starbucks,-499,dining,credit

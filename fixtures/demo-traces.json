@@ -1,0 +1,17 @@
+{
+  "traces": [
+    {
+      "id": "placeholder-groceries-march",
+      "question": "How much did I spend on groceries in March?",
+      "placeholder": true,
+      "steps": [
+        {
+          "name": "sum_by_category",
+          "args": { "from": "2026-03-01", "to": "2026-03-31", "category": "groceries" },
+          "result": { "category": "groceries", "spend_cents": 58470 }
+        }
+      ],
+      "answer": "PLACEHOLDER: this is not a model answer. The tool result above is real (groceries, March: $584.70), but a maintainer still has to record a real run with `bun run record-trace`."
+    }
+  ]
+}

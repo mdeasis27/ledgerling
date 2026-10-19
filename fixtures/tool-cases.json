@@ -1,0 +1,496 @@
+[
+  {
+    "name": "sum_by_category",
+    "args": {
+      "from": "2026-01-01",
+      "to": "2026-01-31"
+    },
+    "expected": {
+      "by_category": {
+        "rent": 185000,
+        "dining": 10486,
+        "entertainment": 30949,
+        "health": 14539,
+        "transport": 15999,
+        "groceries": 59158,
+        "travel": 93385,
+        "utilities": 15419,
+        "shopping": 20641
+      }
+    }
+  },
+  {
+    "name": "sum_by_category",
+    "args": {
+      "from": "2026-01-01",
+      "to": "2026-03-31",
+      "category": "groceries"
+    },
+    "expected": {
+      "category": "groceries",
+      "spend_cents": 185631
+    }
+  },
+  {
+    "name": "sum_by_category",
+    "args": {
+      "from": "2026-01-01",
+      "to": "2026-03-31",
+      "category": "income"
+    },
+    "expected": {
+      "category": "income",
+      "spend_cents": 0
+    }
+  },
+  {
+    "name": "sum_by_category",
+    "args": {
+      "from": "2026-03-31",
+      "to": "2026-03-31"
+    },
+    "expected": {
+      "by_category": {
+        "groceries": 4321,
+        "dining": 499
+      }
+    }
+  },
+  {
+    "name": "sum_by_category",
+    "args": {
+      "from": "2026-02-01",
+      "to": "2026-02-28",
+      "category": "shopping"
+    },
+    "expected": {
+      "category": "shopping",
+      "spend_cents": 29694
+    }
+  },
+  {
+    "name": "list_transactions",
+    "args": {
+      "from": "2026-02-20",
+      "to": "2026-02-20"
+    },
+    "expected": {
+      "transactions": [
+        {
+          "date": "2026-02-20",
+          "description": "PG&E",
+          "amount_cents": -6420,
+          "category": "utilities",
+          "account": "checking"
+        },
+        {
+          "date": "2026-02-20",
+          "description": "Starbucks",
+          "amount_cents": -650,
+          "category": "dining",
+          "account": "credit"
+        },
+        {
+          "date": "2026-02-20",
+          "description": "Starbucks",
+          "amount_cents": -650,
+          "category": "dining",
+          "account": "checking"
+        },
+        {
+          "date": "2026-02-20",
+          "description": "Alpha Books",
+          "amount_cents": -2500,
+          "category": "shopping",
+          "account": "checking"
+        },
+        {
+          "date": "2026-02-20",
+          "description": "Zed Books",
+          "amount_cents": -2500,
+          "category": "shopping",
+          "account": "checking"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_transactions",
+    "args": {
+      "from": "2026-01-01",
+      "to": "2026-03-31",
+      "merchant": "starbucks",
+      "limit": 5
+    },
+    "expected": {
+      "transactions": [
+        {
+          "date": "2026-03-31",
+          "description": "starbucks",
+          "amount_cents": -499,
+          "category": "dining",
+          "account": "credit"
+        },
+        {
+          "date": "2026-03-28",
+          "description": "STARBUCKS",
+          "amount_cents": -536,
+          "category": "dining",
+          "account": "credit"
+        },
+        {
+          "date": "2026-03-09",
+          "description": "Starbucks",
+          "amount_cents": -494,
+          "category": "dining",
+          "account": "checking"
+        },
+        {
+          "date": "2026-03-05",
+          "description": "Starbucks",
+          "amount_cents": -535,
+          "category": "dining",
+          "account": "credit"
+        },
+        {
+          "date": "2026-03-04",
+          "description": "Starbucks",
+          "amount_cents": -551,
+          "category": "dining",
+          "account": "credit"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_transactions",
+    "args": {
+      "from": "2026-01-01",
+      "to": "2026-03-31",
+      "category": "dining",
+      "min_cents": 2000,
+      "max_cents": 5000
+    },
+    "expected": {
+      "transactions": [
+        {
+          "date": "2026-03-11",
+          "description": "Sushi Zen",
+          "amount_cents": -3900,
+          "category": "dining",
+          "account": "credit"
+        },
+        {
+          "date": "2026-02-26",
+          "description": "SUSHI ZEN",
+          "amount_cents": -4816,
+          "category": "dining",
+          "account": "credit"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_transactions",
+    "args": {
+      "from": "2026-03-01",
+      "to": "2026-03-31",
+      "limit": 10
+    },
+    "expected": {
+      "transactions": [
+        {
+          "date": "2026-03-31",
+          "description": "Trader Joe's",
+          "amount_cents": -4321,
+          "category": "groceries",
+          "account": "checking"
+        },
+        {
+          "date": "2026-03-31",
+          "description": "starbucks",
+          "amount_cents": -499,
+          "category": "dining",
+          "account": "credit"
+        },
+        {
+          "date": "2026-03-30",
+          "description": "Costco",
+          "amount_cents": -13781,
+          "category": "groceries",
+          "account": "credit"
+        },
+        {
+          "date": "2026-03-29",
+          "description": "Uber",
+          "amount_cents": -1728,
+          "category": "transport",
+          "account": "credit"
+        },
+        {
+          "date": "2026-03-28",
+          "description": "STARBUCKS",
+          "amount_cents": -536,
+          "category": "dining",
+          "account": "credit"
+        },
+        {
+          "date": "2026-03-28",
+          "description": "Nike",
+          "amount_cents": -6355,
+          "category": "shopping",
+          "account": "checking"
+        },
+        {
+          "date": "2026-03-24",
+          "description": "Target",
+          "amount_cents": -1724,
+          "category": "shopping",
+          "account": "credit"
+        },
+        {
+          "date": "2026-03-24",
+          "description": "Uber",
+          "amount_cents": -2886,
+          "category": "transport",
+          "account": "credit"
+        },
+        {
+          "date": "2026-03-24",
+          "description": "Steam",
+          "amount_cents": -5655,
+          "category": "entertainment",
+          "account": "credit"
+        },
+        {
+          "date": "2026-03-22",
+          "description": "Amazon",
+          "amount_cents": -9854,
+          "category": "shopping",
+          "account": "checking"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_transactions",
+    "args": {
+      "from": "2026-01-01",
+      "to": "2026-01-31",
+      "category": "groceries",
+      "min_cents": 10000
+    },
+    "expected": {
+      "transactions": [
+        {
+          "date": "2026-01-09",
+          "description": "Costco",
+          "amount_cents": -13543,
+          "category": "groceries",
+          "account": "credit"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_transactions",
+    "args": {
+      "from": "2026-02-20",
+      "to": "2026-02-28",
+      "category": "shopping",
+      "merchant": "refund"
+    },
+    "expected": {
+      "transactions": [
+        {
+          "date": "2026-02-21",
+          "description": "Amazon Refund",
+          "amount_cents": 2999,
+          "category": "shopping",
+          "account": "checking"
+        }
+      ]
+    }
+  },
+  {
+    "name": "top_merchants",
+    "args": {
+      "from": "2026-01-01",
+      "to": "2026-03-31",
+      "n": 5
+    },
+    "expected": {
+      "merchants": [
+        {
+          "description": "Maple Apartments",
+          "spend_cents": 555000
+        },
+        {
+          "description": "Airbnb",
+          "spend_cents": 212578
+        },
+        {
+          "description": "Costco",
+          "spend_cents": 77317
+        },
+        {
+          "description": "Trader Joe's",
+          "spend_cents": 53529
+        },
+        {
+          "description": "Delta Air Lines",
+          "spend_cents": 47867
+        }
+      ]
+    }
+  },
+  {
+    "name": "top_merchants",
+    "args": {
+      "from": "2026-02-20",
+      "to": "2026-02-21",
+      "n": 3
+    },
+    "expected": {
+      "merchants": [
+        {
+          "description": "PG&E",
+          "spend_cents": 6420
+        },
+        {
+          "description": "Steam",
+          "spend_cents": 3888
+        },
+        {
+          "description": "Alpha Books",
+          "spend_cents": 3500
+        }
+      ]
+    }
+  },
+  {
+    "name": "top_merchants",
+    "args": {
+      "from": "2026-01-01",
+      "to": "2026-01-31",
+      "n": 1
+    },
+    "expected": {
+      "merchants": [
+        {
+          "description": "Maple Apartments",
+          "spend_cents": 185000
+        }
+      ]
+    }
+  },
+  {
+    "name": "monthly_summary",
+    "args": {
+      "month": "2026-01"
+    },
+    "expected": {
+      "month": "2026-01",
+      "income_cents": 629600,
+      "spend_cents": 445576,
+      "net_cents": 184024
+    }
+  },
+  {
+    "name": "monthly_summary",
+    "args": {
+      "month": "2026-03"
+    },
+    "expected": {
+      "month": "2026-03",
+      "income_cents": 626334,
+      "spend_cents": 377781,
+      "net_cents": 248553
+    }
+  },
+  {
+    "name": "monthly_summary",
+    "args": {
+      "month": "2026-04"
+    },
+    "expected": {
+      "month": "2026-04",
+      "income_cents": 0,
+      "spend_cents": 0,
+      "net_cents": 0
+    }
+  },
+  {
+    "name": "budget_status",
+    "args": {
+      "category": "groceries",
+      "month": "2026-02",
+      "budget_cents": 60000
+    },
+    "expected": {
+      "category": "groceries",
+      "month": "2026-02",
+      "spend_cents": 68003,
+      "remaining_cents": -8003,
+      "over": true
+    }
+  },
+  {
+    "name": "budget_status",
+    "args": {
+      "category": "dining",
+      "month": "2026-03",
+      "budget_cents": 5000
+    },
+    "expected": {
+      "category": "dining",
+      "month": "2026-03",
+      "spend_cents": 8968,
+      "remaining_cents": -3968,
+      "over": true
+    }
+  },
+  {
+    "name": "budget_status",
+    "args": {
+      "category": "groceries",
+      "month": "2026-02",
+      "budget_cents": 68003
+    },
+    "expected": {
+      "category": "groceries",
+      "month": "2026-02",
+      "spend_cents": 68003,
+      "remaining_cents": 0,
+      "over": false
+    }
+  },
+  {
+    "name": "sum_by_category",
+    "args": {
+      "from": "2026-13-01",
+      "to": "2026-01-31"
+    },
+    "expected": {
+      "error": "*"
+    }
+  },
+  {
+    "name": "list_transactions",
+    "args": {
+      "from": "2026-01-01",
+      "to": "2026-01-31",
+      "category": "pets"
+    },
+    "expected": {
+      "error": "*"
+    }
+  },
+  {
+    "name": "no_such_tool",
+    "args": {},
+    "expected": {
+      "error": "*"
+    }
+  }
+]

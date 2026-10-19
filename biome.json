@@ -1,0 +1,25 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.15/schema.json",
+  "files": {
+    "includes": [
+      "**",
+      "!ai-kit",
+      "!.next",
+      "!node_modules",
+      "!.scratch",
+      "!fixtures",
+      "!next-env.d.ts",
+      "!tsconfig.json"
+    ]
+  },
+  "formatter": { "enabled": true, "indentStyle": "space", "indentWidth": 2, "lineWidth": 100 },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "preset": "recommended",
+      "a11y": { "noNoninteractiveTabindex": "off" },
+      "suspicious": { "noExplicitAny": "error", "noTsIgnore": "error" }
+    }
+  },
+  "css": { "formatter": { "enabled": true } }
+}
